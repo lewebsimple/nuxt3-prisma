@@ -10,6 +10,7 @@ export default defineBuildConfig({
     { input: 'src/module' },
   ],
   externals: [
+    '@nuxt/kit',
     '@nuxt/schema',
     'consola',
   ],

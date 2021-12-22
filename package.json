@@ -3,22 +3,22 @@
   "version": "0.1.0",
   "license": "MIT",
   "sideEffects": false,
-  "exports": {
-    ".": {
-      "require": "./index.cjs",
-      "import": "./dist/index.mjs"
-    }
-  },
-  "main": "./index.cjs",
-  "module": "./dist/module.mjs",
-  "types": "./dist/modules.d.ts",
   "files": [
     "dist",
     "index.cjs"
   ],
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./index.cjs",
+  "module": "./dist/module.mjs",
+  "types": "./dist/module.d.ts",
   "scripts": {
     "build": "unbuild",
-    "stub": "unbuild --stub"
+    "release": "release-it"
   },
   "peerDependencies": {
     "@prisma/client": "^3",
@@ -31,9 +31,13 @@
   "devDependencies": {
     "@lewebsimple/eslint-config": "^0.4.7",
     "eslint": "^8.5.0",
+    "release-it": "^14.11.8",
     "unbuild": "^0.6.7"
   },
   "eslintConfig": {
     "extends": "@lewebsimple/eslint-config"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
