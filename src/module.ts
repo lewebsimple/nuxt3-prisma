@@ -9,8 +9,10 @@ export default defineNuxtModule<NuxtPrismaOptions>({
     configKey: 'prisma',
   },
   defaults: {},
-  setup() {
-    logger.info('Module loaded');
+  setup(_options, nuxt) {
+    nuxt.hook('build:before', () => {
+      logger.info('Nuxt3 Prisma module setup');
+    });
   },
 });
 

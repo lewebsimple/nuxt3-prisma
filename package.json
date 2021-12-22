@@ -18,7 +18,12 @@
     "index.cjs"
   ],
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "peerDependencies": {
+    "@prisma/client": "^3",
+    "prisma": "^3"
   },
   "dependencies": {
     "@nuxt/kit": "latest",
