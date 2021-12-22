@@ -1,0 +1,35 @@
+{
+  "name": "nuxt3-prisma",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./index.cjs",
+  "module": "./dist/module.mjs",
+  "types": "./dist/modules.d.ts",
+  "files": [
+    "dist",
+    "index.cjs"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@nuxt/kit": "latest",
+    "pathe": "^0.2.0"
+  },
+  "devDependencies": {
+    "@lewebsimple/eslint-config": "^0.4.7",
+    "eslint": "^8.5.0",
+    "unbuild": "^0.6.7"
+  },
+  "eslintConfig": {
+    "extends": "@lewebsimple/eslint-config"
+  }
+}
