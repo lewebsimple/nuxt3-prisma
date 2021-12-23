@@ -25,7 +25,7 @@
     "prisma": "^3"
   },
   "dependencies": {
-    "@nuxt/kit": "latest",
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
     "pathe": "^0.2.0"
   },
   "devDependencies": {
