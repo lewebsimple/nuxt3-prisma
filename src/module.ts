@@ -1,3 +1,4 @@
+import { execSync } from 'child_process';
 import { defineNuxtModule } from '@nuxt/kit';
 import logger from './logger';
 
@@ -11,7 +12,9 @@ export default defineNuxtModule<NuxtPrismaOptions>({
   defaults: {},
   setup(_options, nuxt) {
     nuxt.hook('build:before', () => {
-      logger.info('Nuxt3 Prisma module setup');
+      const start = Date.now();
+      execSync('prisma generate');
+      logger.success(`Generated Prisma client in ${Date.now() - start}ms`);
     });
   },
 });
