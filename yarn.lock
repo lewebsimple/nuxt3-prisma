@@ -306,12 +306,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nuxt/kit-edge@latest":
-  version "3.0.0-27335375.b41a1d2"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27335375.b41a1d2.tgz#67f2f2862bc44aa1d4f579209eff8999f43b695a"
-  integrity sha512-OYUVO3kCA5zgkeCOl5mcKC7aPjA6qHt2VkIzkY7lv7HZ55N7LevOL25bKfG2dzBpMTw8ruUJisWc00t49OnWZQ==
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version "3.0.0-27337794.cac70e4"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27337794.cac70e4.tgz#ff716967f450b2551a08530734111e5ec49f0229"
+  integrity sha512-6zz8vsg3TVRI6Wz7CBJ7NXyXkGxewnuP+x5ioaAyR1pxGMc7yh/jGUN+QTPeER7usM2fB/RqN80h73jaUR1Z/A==
   dependencies:
-    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27335375.b41a1d2"
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27337794.cac70e4"
     consola "^2.15.3"
     defu "^5.0.0"
     dotenv "^10.0.0"
@@ -328,17 +328,10 @@
     unctx "^1.0.2"
     untyped "^0.3.0"
 
-"@nuxt/kit@latest":
-  version "0.8.1-edge"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-0.8.1-edge.tgz#880c6b28819cd6bc6800771823ba3af392003783"
-  integrity sha512-7kU+mYxRy3w9UohFK/rfrPkKXM9A4LWsTqpFN3MH7mxohy98SFBkf87B6nqE6ulXmztInK+MptS0Lr+VQa0E6w==
-  dependencies:
-    "@nuxt/kit-edge" latest
-
-"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27335375.b41a1d2":
-  version "3.0.0-27335375.b41a1d2"
-  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27335375.b41a1d2.tgz#72c9898dcbf22891affb192ecd0b34f1c135be0c"
-  integrity sha512-4pDygVunUn0SG8G3AmgNXRHjjVlp8+qaW2/WhhNdOlBS9iPXlziF2JuenZxsQYoF972EK4q0ZSOrA2yAXe4dQw==
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27337794.cac70e4":
+  version "3.0.0-27337794.cac70e4"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27337794.cac70e4.tgz#47ecd9f68695777fcebbdb994b0f3704c0160021"
+  integrity sha512-ErouOzVXgHgJ1tuWuwPbOST0bCX+utNaBeW6t6yBm7JiMjsJRjCHuti/claQDRrkntZShjF2nMYeRP2A4c8bsQ==
   dependencies:
     create-require "^1.1.1"
     defu "^5.0.0"
@@ -448,6 +441,18 @@
   integrity sha512-s1zLBjWhdEI2zwaoSgyOFoKSl109CUcVBCc7biPJ3aAf6LGLU6szDvi31JPU7bxfla2lqfhjbbg/5DdFNxOwHw==
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
+
+"@prisma/client@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-3.7.0.tgz#9cafc105f12635c95e9b7e7b18e8fbf52cf3f18a"
+  integrity sha512-fUJMvBOX5C7JPc0e3CJD6Gbelbu4dMJB4ScYpiht8HMUnRShw20ULOipTopjNtl6ekHQJ4muI7pXlQxWS9nMbw==
+  dependencies:
+    "@prisma/engines-version" "3.7.0-31.8746e055198f517658c08a0c426c7eec87f5a85f"
+
+"@prisma/engines-version@3.7.0-31.8746e055198f517658c08a0c426c7eec87f5a85f":
+  version "3.7.0-31.8746e055198f517658c08a0c426c7eec87f5a85f"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-3.7.0-31.8746e055198f517658c08a0c426c7eec87f5a85f.tgz#055f36ac8b06c301332c14963cd0d6c795942c90"
+  integrity sha512-+qx2b+HK7BKF4VCa0LZ/t1QCXsu6SmvhUQyJkOD2aPpmOzket4fEnSKQZSB0i5tl7rwCDsvAiSeK8o7rf+yvwg==
 
 "@rollup/plugin-alias@^3.1.8":
   version "3.1.8"

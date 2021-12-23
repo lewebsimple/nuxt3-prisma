@@ -7,11 +7,16 @@ export default defineBuildConfig({
     cjsBridge: true,
   },
   entries: [
-    { input: 'src/module' },
+    { input: 'src/index' },
+    { input: 'src/plugin', declaration: false },
   ],
   externals: [
     '@nuxt/kit',
     '@nuxt/schema',
+    '@prisma/client',
     'consola',
+    '#app',
+    '#build',
+    '#build/prisma-client.mjs',
   ],
 });

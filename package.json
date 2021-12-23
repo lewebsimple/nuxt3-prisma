@@ -10,12 +10,15 @@
   "exports": {
     ".": {
       "require": "./index.cjs",
-      "import": "./dist/module.mjs"
+      "import": "./dist/index.mjs"
+    },
+    "./plugin": {
+      "import": "./dist/plugin.mjs"
     }
   },
   "main": "./index.cjs",
-  "module": "./dist/module.mjs",
-  "types": "./dist/module.d.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "unbuild",
     "release": "release-it"
@@ -30,6 +33,7 @@
   },
   "devDependencies": {
     "@lewebsimple/eslint-config": "^0.4.7",
+    "@prisma/client": "^3.7.0",
     "eslint": "^8.5.0",
     "release-it": "^14.11.8",
     "unbuild": "^0.6.7"
