@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-prisma",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "sideEffects": false,
   "files": [
