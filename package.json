@@ -11,9 +11,6 @@
     ".": {
       "require": "./index.cjs",
       "import": "./dist/index.mjs"
-    },
-    "./plugin": {
-      "import": "./dist/plugin.server.mjs"
     }
   },
   "main": "./index.cjs",
@@ -33,7 +30,6 @@
   },
   "devDependencies": {
     "@lewebsimple/eslint-config": "^0.4.7",
-    "@prisma/client": "^3.7.0",
     "eslint": "^8.5.0",
     "release-it": "^14.11.8",
     "unbuild": "^0.6.7"

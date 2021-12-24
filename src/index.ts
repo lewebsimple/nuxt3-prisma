@@ -1,7 +1,5 @@
 import { execSync } from 'child_process';
-import { fileURLToPath } from 'url';
-import { addPluginTemplate, defineNuxtModule } from '@nuxt/kit';
-import { dirname, resolve } from 'pathe';
+import { defineNuxtModule } from '@nuxt/kit';
 import logger from './logger';
 import type { NuxtPrismaOptions } from './types';
 
@@ -12,19 +10,11 @@ export default defineNuxtModule<NuxtPrismaOptions>({
   },
   defaults: {},
   setup(_options, nuxt) {
-    // Runtime path
-    const __dirname__ = dirname(fileURLToPath(import.meta.url));
-
     // Generate Prisma client before build
     nuxt.hook('build:before', () => {
       const start = Date.now();
       execSync('prisma generate');
       logger.success(`Generated Prisma client in ${Date.now() - start}ms`);
-    });
-
-    // Add Prisma client plugin
-    addPluginTemplate({
-      src: resolve(__dirname__, './plugin.server.mjs'),
     });
   },
 });
