@@ -1,6 +1,6 @@
 import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
-import { addPluginTemplate, addTemplate, defineNuxtModule } from '@nuxt/kit';
+import { addPluginTemplate, defineNuxtModule } from '@nuxt/kit';
 import { dirname, resolve } from 'pathe';
 import logger from './logger';
 import type { NuxtPrismaOptions } from './types';
@@ -22,19 +22,9 @@ export default defineNuxtModule<NuxtPrismaOptions>({
       logger.success(`Generated Prisma client in ${Date.now() - start}ms`);
     });
 
-    // Add Prisma client wrapper
-    addTemplate({
-      filename: 'prisma-client.mjs',
-      getContents: () => `
-      import pkg from '@prisma/client';
-      export const { PrismaClient } = pkg;
-      export default prisma = new PrismaClient();
-      `,
-    });
-
     // Add Prisma client plugin
     addPluginTemplate({
-      src: resolve(__dirname__, './plugin.mjs'),
+      src: resolve(__dirname__, './plugin.server.mjs'),
     });
   },
 });

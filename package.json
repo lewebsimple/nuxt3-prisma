@@ -13,7 +13,7 @@
       "import": "./dist/index.mjs"
     },
     "./plugin": {
-      "import": "./dist/plugin.mjs"
+      "import": "./dist/plugin.server.mjs"
     }
   },
   "main": "./index.cjs",
